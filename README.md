@@ -33,6 +33,27 @@ A simple distributed file system prototype with a master server coordinating mul
 - Configure replication and node discovery in `master_server.py`.
 - For Windows PowerShell, use `python` from your active environment.
 
+## Windows Setup
+- Install Python 3.10+ and ensure `python` is on PATH.
+- (Optional) Create venv:
+   ```powershell
+   python -m venv .venv; .\.venv\Scripts\Activate.ps1
+   ```
+- Install dependencies:
+   ```powershell
+   pip install -r requirements.txt
+   ```
+- Run services as separate terminals in PowerShell:
+   ```powershell
+   python master_server.py
+   python storage_node.py --node-id 1 --port 5001
+   python storage_node.py --node-id 2 --port 5002
+   python storage_node.py --node-id 3 --port 5003
+   ```
+
+## Dependencies
+See `requirements.txt` for Python packages used.
+
 ## Roadmap
 - Add health checks and automatic rebalancing.
 - Improve GUI and dashboard.
