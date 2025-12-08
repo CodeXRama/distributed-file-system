@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+venv/
+ENV/
+
+# Editor settings
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs and temp
+*.log
+tempCodeRunnerFile.py
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Cache
+.cache/
+
+# Local storage node data (ignored)
+storage_node1/
+storage_node2/
+storage_node3/
+
+# Env files
+*.env
