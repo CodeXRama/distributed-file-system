@@ -52,6 +52,9 @@ A simple distributed file system prototype with a master server coordinating mul
 ## Dependencies
 See `requirements.txt` for Python packages used.
 
+## CLI Usage
+See `USAGE_CLI.md` for common commands and examples.
+
 ## Roadmap
 - Add health checks and automatic rebalancing.
 - Improve GUI and dashboard.
