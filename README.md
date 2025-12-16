@@ -55,6 +55,12 @@ See `requirements.txt` for Python packages used.
 ## CLI Usage
 See `USAGE_CLI.md` for common commands and examples.
 
+## Dashboard
+See `USAGE_DASHBOARD.md` for dashboard usage and features.
+
+## Troubleshooting
+See `TROUBLESHOOTING.md` for common issues and fixes.
+
 ## Roadmap
 - Add health checks and automatic rebalancing.
 - Improve GUI and dashboard.
