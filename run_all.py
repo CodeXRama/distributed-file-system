@@ -2,7 +2,7 @@ import subprocess
 import os
 import time
 
-# 🔴 IMPORTANT: This must match your actual project folder
+# IMPORTANT: This must match your actual project folder
 PROJECT_PATH = r"C:\Users\Admin\Desktop\Distributed_file_system"
 
 # Windows flag: open in a new console window
@@ -25,19 +25,15 @@ def main():
         print("ERROR: PROJECT_PATH does not exist:")
         print(PROJECT_PATH)
         return
-
     print("Launching Distributed File System...")
-
     # MASTER
     open_terminal("MASTER SERVER", "python master_server.py")
     time.sleep(1)
-
     # NODES
     open_terminal("NODE 1", "python storage_node.py node1 6001")
     open_terminal("NODE 2", "python storage_node.py node2 6002")
     open_terminal("NODE 3", "python storage_node.py node3 6003")
     time.sleep(1)
-
     # CLIENT GUI WINDOWS
     open_terminal("CLIENT GUI 1", "python dfs_client_gui.py")
     open_terminal("CLIENT GUI 2", "python dfs_client_gui.py")
